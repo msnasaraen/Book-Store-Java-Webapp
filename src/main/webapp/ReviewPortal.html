@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Review Portal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/review.css" />
+    <meta charset="UTF-8">
+    <title>Review Portal</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="shortcut icon" type="images/png" href="images/head.png" />
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/polyfill.js"></script>
+
+    <script src="js/reviewportalmain.js"></script>
+
+
+</head>
+<body>
+	<div id="sidebar1">
+		Facets
+		<div id="side1"></div>
+	</div>
+	<div id="sidebar2">
+
+		<a href="adddocument.html">Add Document</a>
+		<div id="side2">
+		</div>
+		
+	</div>
+	<div id="sidebar3">
+	
+		<a href="addpane.html">Add Code Pane</a>
+	
+		<div id="side3">
+		</div>
+			<input type="button" name="submit_review" id="submit_review"
+			value="Save">
+	</div>
+	 <script id="document-template" type="text/x-handlebars-template">
+			<form id="setlabel">
+			<table border=1>
+			<tr>
+				<th>Review</th>
+				<th>Doc id</th>
+				<th>Doc Name</th>
+				<th>Review parent</th>
+				<th>Parent id</th>
+				<th>Labels</th>
+			</tr>
+            {{#each this}}
+            		<tr>
+					<td><input type="checkbox" name="id" value={{id}}></input>Review</td>
+					<td>{{id}}</td>
+					<td>{{name}}</td>
+					<td><input type="checkbox" name="id" value={{parentid}}></input>Review</td>
+					<td>{{parentid}}</td>
+					<td>{{label}}</td>
+					</tr>
+             {{/each}}
+		</table>
+		</form>
+       </script>
+       
+
+         <script id="document-facet" type="text/x-handlebars-template">
+			<ul>
+            {{#each this}}
+					<li>{{name}}:{{count}}</li>
+            {{/each}}
+			</ul>
+         </script>
+       
+       
+</body>
+</html>

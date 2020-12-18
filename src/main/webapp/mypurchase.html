@@ -1,0 +1,79 @@
+<html>
+   <head>
+      <link rel="stylesheet"  type="text/css" href="css/style.css"/>
+      <meta charset="UTF-8">
+      <title>Purchased</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="shortcut icon" type="images/png" href="images/head.png"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/jquery-min.js"></script>
+      <script src="js/polyfill.js"></script>
+      <script src="js/userDetails.js"></script>
+      <script src="js/mypurchase.js"></script>
+   </head>
+   <body>
+      <div id="header1">
+         <img id="logo" src="images\PSAW.png" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <a href="logout.html" id="noti">logout</a> <i id="noti"
+            class="fa fa-sign-out" aria-hidden="true"></i> <i id="noti"><label
+            id="designation">william</label></i> <i id="noti"
+            class="fa fa-caret-down" aria-hidden="true"></i> <i id="noti"><label
+            id="name">william</label></i> <i id="noti" class="fa fa-user"
+            aria-hidden="true"></i>
+         <input id='search-text' name='q' type='text'/>			 
+         <button id='search-button' type='submit'><span>Search</span></button>
+      </div>
+      <div id="container">
+         <div id="sidebar">
+            <ul id="nav">
+               <div id="major"></div>
+               <li><a href="arts.html"><i class="fa fa-flask" aria-hidden="true"></i> &nbspArts & Science</a></li>
+               <li><a href="bibliography.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp Bibliography</a></li>
+               <li><a href="health.html"><i class="fa fa-medkit" aria-hidden="true"></i>&nbspHealth & Cooking</a></li>
+               <li><a href="computer.html"><i class="fa fa-desktop" aria-hidden="true"></i>&nbspComputers</a></li>
+               <li><a href="dictionaries.html"><i class="fa fa-globe" aria-hidden="true"></i>&nbspDictionaries</a></li>
+               <li><a href="college.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbspCollege and schools</a></li>
+               <li><a href="business.html"><i class="fa fa-briefcase" aria-hidden="true"></i> &nbspBusiness and corporate</a></li>
+               <li><a href="index.html"><i class="fa fa-film" aria-hidden="true"></i> &nbspEntertainment</a></li>
+            </ul>
+         </div>
+         <div id="sidebar1">
+         </div>
+         <script id="document-template" type="text/x-handlebars-template">
+            {{#each this}}
+            
+              <table id="table1">
+                 <tr id="row1">
+                    <td >
+                       <div id="image1"><i style="margin-top:10px;" class="fa fa-flask" aria-hidden="true"></i></div>
+                    </td>
+                    <td id="detail2">
+                       <ul style="list-style-type: none">
+                          <li><span style="font-size: 17px ;color: #E6ECEA;">  {{this.name}}  </span></li>
+                          <li><span style="font-size: 17px ;color: #E6ECEA;">By   {{this.author}}  </span></li>
+                          <li><span style="font-size: 15px ;color: #E6ECEA;">Rs.  {{this.price}}  &nbsp&nbspStock:  {{this.available}}  </span></li>
+                       </ul>
+                    </td>
+                 </tr>
+                 <tr id="row2">
+                    <td >
+                       <div id="detail1"><span style="font-size: 17px ;color: #E6ECEA;"> {{ this.category}}  </span></div>
+                    </td>
+                    <td id="detail2">
+                       <ul style="list-style-type: none">
+                          <li class="id" value=this.id><span style="font-size: 17px ;color: #E6ECEA;">Book id:  {{this.id}}  </span></li>
+                          <li style="display:inline;"><button class="cart">Add to cart</button></li>
+                          <li style="display:inline;"><button class="buy">Buy Now</button></li>
+
+                          &nbsp&nbsp 
+                       </ul>
+                    </td>
+                 </tr>
+              </table>
+             {{/each}}
+         </script>
+      </div>
+      <script src="js/index.js"></script>
+   </body>
+</html>

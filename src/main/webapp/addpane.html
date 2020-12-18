@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/review.css" />
+    <meta charset="UTF-8">
+    <title>Add Books</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="shortcut icon" type="images/png" href="images/head.png" />
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/codingpane.js"></script>
+
+</head>
+
+<body>
+
+
+	<div id="sidebar1">
+		<ul id="nav">
+			<li>Non labeled</li>
+			<li>Labeled</li>
+		</ul>
+	</div>
+	<div id="sidebar2">
+
+		<form id="adddoc">
+			<table>
+				<tr>
+					<td>Pane Name</td>
+					<td><input type="text" name="name" />
+				</tr>
+				<tr>
+					<td>Pane Type</td>
+					<td>
+					<select  name="type">
+                                    <option  value="radio">Radio Button</option>
+                                    <option value="checkbox">Check box</option>
+                    </select>
+                    </td>
+				</tr>
+			</table>
+		</form>
+		<input type="button" name="submit_document" id="submit_document"
+			value="Add Coding Pane">
+
+	</div>
+	<div id="sidebar3">
+	</div>
+
+
+
+		<script src="js/index.js"></script>
+</body>
+
+</html>

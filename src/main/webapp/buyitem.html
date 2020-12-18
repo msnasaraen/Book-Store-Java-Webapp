@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta charset="UTF-8">
+    <title>Buy book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="images/png" href="images/head.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/transaction.js"></script>
+    <script src="js/mainsearchindex.js"></script>
+    
+</head>
+
+<body>
+
+    <div id="header1">
+        <img id="logo" src="images\PSAW.png" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input id='search-text' name='q' type='text' /> 
+        <button id='search-button' type='submit'><span>Search</span></button>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+
+            <div class="form">
+
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#signup">Debit/Credit</a></li>
+                    <li class="tab"><a href="#login">Net Banking</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="signup">
+                        <form id="debitform">
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="Address" placeholder="Address*" type="text" required autocomplete="off" />
+                            </div>
+                            
+                            <div class="field-wrap">
+
+                                <input id="ip" name="count" placeholder="Enter Count*" type="text" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="Cardno" placeholder="Card Number*" type="email" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+                                <input id="ip" name="cvv" placeholder="CVV number*" type="text" required autocomplete="off" />
+                            </div>
+                            <div class="field-wrap">
+                                <select id="ip" name="bank">
+                                    <option id="ip" value="sbi">SBI</option>
+                                    <option id="ip" value="hdfc">HDFC</option>
+                                    <option id="ip" value="icici">ICICI</option>
+                                </select>
+                            </div>
+                        </form>
+                        <input type="button" class="button button-block" name="submit_debit" id="submit_debit" value="Buy">
+
+                        <!--  <button type="submit" />Register</button>-->
+
+                    </div>
+
+                    <div id="login">
+                        <form id="netbankingform">
+                        
+                             <div class="field-wrap">
+
+                                <input id="ip" name="count" placeholder="Enter Count*" type="text" required autocomplete="off" />
+                            </div>
+
+							<div class="field-wrap">
+
+                                <input id="ip" name="Address" placeholder="Address*" type="text" required autocomplete="off" />
+                            </div>
+                            
+                            <div class="field-wrap">
+
+                                <input id="ip" name="username" placeholder="Username" type="text" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="password" placeholder="Passsword" type="password" required autocomplete="off" />
+                            </div>
+
+ 							<div class="field-wrap">
+                                <select id="ip" name="bank">
+                                    <option id="ip" value="sbi">SBI</option>
+                                    <option id="ip" value="hdfc">HDFC</option>
+                                    <option id="ip" value="icici">ICICI</option>
+                                </select>
+                            </div>
+                            <!--<p class="forgot"><a href="#">Forgot Password?</a></p>-->
+
+                        </form>
+
+                        <input type="button" class="button button-block" name="submit_netbank" id="submit_netbank" value="Buy">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

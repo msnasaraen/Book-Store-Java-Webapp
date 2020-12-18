@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="images/png" href="images/head.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/mainsearchindex.js"></script>
+    <script>
+
+	
+    </script>
+</head>
+
+<body>
+
+    <div id="header1">
+        <img id="logo" src="images\PSAW.png" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input id='search-text' name='q' type='text'/> 
+        <button id='search-button' type='submit'><span>Search</span></button>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+
+            <div class="form">
+
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#signup">Sign Up</a></li>
+                    <li class="tab"><a href="#login">Log In</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="signup">
+                        <form id="registerform">
+
+                            <div class="top-row">
+                                <div class="field-wrap">
+
+                                    <input id="ip" name="firstname" placeholder="First Name*" type="text" required autocomplete="off" />
+                                </div>
+
+                                <div class="field-wrap">
+
+                                    <input id="ip" name="lastname" placeholder="Last Name" type="text" required autocomplete="off" />
+                                </div>
+                            </div>
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="username" placeholder="Username*" type="text" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="email" placeholder="Email*" type="email" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+                                <input id="ip" name="mobile" placeholder="Mobile Number*" type="text" required autocomplete="off" />
+                            </div>
+                            <div class="field-wrap">
+                                <select id="ip" name="desig">
+                                    <option id="ip" value="student">Student</option>
+                                    <option id="ip" value="employee">Employee</option>
+                                    <option id="ip" value="retailclient">Retail Client</option>
+                                </select>
+                            </div>
+                            <div class="field-wrap">
+                                <input id="ip" name="password" placeholder="Password*" type="password" required autocomplete="off" />
+                            </div>
+                        </form>
+                        <input type="button" class="button button-block" name="submit_register" id="submit_register" value="SignUp">
+
+                        <!--  <button type="submit" />Register</button>-->
+
+                    </div>
+
+                    <div id="login">
+                        <form id="loginform">
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="username" placeholder="Username" type="text" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+
+                                <input id="ip" name="password" placeholder="Passsword" type="password" required autocomplete="off" />
+                            </div>
+
+                            <!--<p class="forgot"><a href="#">Forgot Password?</a></p>-->
+
+                        </form>
+
+                        <input type="button" class="button button-block" name="submit_login" id="submit_login" value="Login">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
